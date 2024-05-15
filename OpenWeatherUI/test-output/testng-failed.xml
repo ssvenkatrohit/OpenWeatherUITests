@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="api.utilities.ExtentReportManager"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="test.UITests">
+        <methods>
+          <include name="loadBaseUrl"/>
+          <include name="screenshotAndDeleteCookies"/>
+          <include name="UI_HomePage"/>
+          <include name="suiteSetup"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class> <!-- test.UITests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

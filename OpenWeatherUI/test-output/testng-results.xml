@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-15T13:31:15Z" name="Suite" finished-at="2024-05-15T13:31:37Z" duration-ms="21903">
+    <groups>
+    </groups>
+    <test started-at="2024-05-15T13:31:15Z" name="Test" finished-at="2024-05-15T13:31:37Z" duration-ms="21903">
+      <class name="test.UITests">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:02Z" name="suiteSetup" finished-at="2024-05-15T19:01:15Z" duration-ms="13021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method is-config="true" signature="loadBaseUrl(java.lang.reflect.Method)[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:16Z" name="loadBaseUrl" finished-at="2024-05-15T19:01:16Z" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void test.UITests.MapsView()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBaseUrl -->
+        <test-method signature="MapsView()[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:16Z" name="MapsView" finished-at="2024-05-15T19:01:25Z" duration-ms="8134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MapsView -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:25Z" name="screenshotAndDeleteCookies" finished-at="2024-05-15T19:01:25Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MapsView status=SUCCESS method=UITests.MapsView()[pri:0, instance:test.UITests@58670130] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="loadBaseUrl(java.lang.reflect.Method)[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:25Z" name="loadBaseUrl" finished-at="2024-05-15T19:01:25Z" duration-ms="933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void test.UITests.UI_HomePage() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBaseUrl -->
+        <test-method signature="UI_HomePage()[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:25Z" name="UI_HomePage" finished-at="2024-05-15T19:01:33Z" duration-ms="7889" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Temperature API 32.99'C, UI 33°C.   expected [32.99] but found [33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Temperature API 32.99'C, UI 33°C.   expected [32.99] but found [33]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at pages.HomePage.searchAndVerifyCityWeather(HomePage.java:117)
+	at test.UITests.UI_HomePage(UITests.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UI_HomePage -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:33Z" name="screenshotAndDeleteCookies" finished-at="2024-05-15T19:01:34Z" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UI_HomePage status=FAILURE method=UITests.UI_HomePage()[pri:0, instance:test.UITests@58670130] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="loadBaseUrl(java.lang.reflect.Method)[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:34Z" name="loadBaseUrl" finished-at="2024-05-15T19:01:34Z" duration-ms="809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void test.UITests.searchWeatherInYourCity()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadBaseUrl -->
+        <test-method signature="searchWeatherInYourCity()[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:34Z" name="searchWeatherInYourCity" finished-at="2024-05-15T19:01:37Z" duration-ms="2744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWeatherInYourCity -->
+        <test-method is-config="true" signature="screenshotAndDeleteCookies(org.testng.ITestResult)[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:37Z" name="screenshotAndDeleteCookies" finished-at="2024-05-15T19:01:37Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchWeatherInYourCity status=SUCCESS method=UITests.searchWeatherInYourCity()[pri:0, instance:test.UITests@58670130] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAndDeleteCookies -->
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:test.UITests@58670130]" started-at="2024-05-15T19:01:38Z" name="suiteTearDown" finished-at="2024-05-15T19:01:39Z" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTearDown -->
+      </class> <!-- test.UITests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

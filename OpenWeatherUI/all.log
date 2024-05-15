@@ -1,0 +1,4 @@
+2024-05-15 19:01:16.891 [main] INFO  test.UITests - validating UI Elements and options on Maps page
+2024-05-15 19:01:25.977 [main] INFO  test.UITests - validating UI Elements in HomePage
+2024-05-15 19:01:34.877 [main] INFO  test.UITests - validating searchCity functionality 
+2024-05-15 19:01:36.529 [main] INFO  test.UITests - validating invalidCity Search functionality
